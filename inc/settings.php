@@ -122,7 +122,8 @@ final class Settings {
         $timezone = "UTC";
 
         // Enable PHP error reporting.
-        $this->error_reporting = true;
+        // Prefer "false" on production stage
+        $this->error_reporting = false;
 
         // Enable error pages.
         $this->error_pages = true;
